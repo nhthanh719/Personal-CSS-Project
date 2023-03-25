@@ -18,43 +18,57 @@
 
     <main>
         <section class="grid-container-2">
-            <div id="items" class="grid-item-1">
+            <div id="items">
                 <h2>ITEMS</h2>
-                <p><span class="amount">1x</span><span class="item">Cappucino</span><span class="price">$6.00</span></p>
-                <p class="ingredient">Light Foam</p>
-                <p><span class="amount">1x</span><span class="item">Cappucino</span><span class="price">
-                        $7.90</span></p>
-                <p class="ingredient">Almond Milk</p>
-                <p class="ingredient">Double Espresso Shot</p>
-                <p><span class="amount">1x</span>
-                    <span class="item">Croissant</span><span class="price">
-                        $5.37</span></p>
-                <p class="ingredient">Butter</p>
+                <div class="item">
+                    <p class="amount">1x
+                    <p>
+                    <p class="item-name">Cappucino</p>
+                    <p class="price">$6.00</p>
+                    <p class="ingredient">Lite Foam</p>
+                </div>
+                <div class="item">
+                    <p class="amount">1x</p>
+                    <p class="item-name">Cappucino</p>
+                    <p class="price">$7.90</p>
+                    <p class="ingredient">Almond Milk</p>
+                    <p class="ingredient">Double Espresso Shot</p>
+                </div>
+                <div class="item">
+                    <p class="amount">1x</p>
+                    <p class="item-name">Croissant</p>
+                    <p class="price">$5.37</p>
+                    <p class="ingredient">Butter</p>
+                </div>
             </div>
-            <div id="name" class="grid-item-2">
+            <div id="name">
                 <h2>NAME</h2>
                 <form>
-                    <label for="name">Name for order</label>
-                    <input type="text" id="name" name="name">
+                    <label for="order-name">Name for order</label>
+                    <input type="text" id="order-name" name="order-name">
                 </form>
             </div>
-            <div id="payment" class="grid-item-3">
+            <div id="payment">
                 <h2>PAYMENT</h2>
                 <form>
                     <label for="card-number">Card number</label>
                     <input type="text" id="card-number" name="card-number">
                     <label for="ccv-number">CCV number</label>
-                    <input type="number" id="ccv-number" name="ccv-number">
+                    <input type="text" id="ccv-number" name="ccv-number">
                 </form>
-            </div>  
+            </div>
         </section>
 
-        <section>
-            <div id="Total">
-                <p>Subtotal: <span class="price">$9.65</span></p>
-                <p>Tax: <span class="price">$0.82</span></p>
-                <p>Total: <span class="price">$10.47</span></p>
-            </div>
+        <section id="total">
+                <div>
+                    <p>Subtotal:</p><span class="price">$9.65</span>
+                </div>
+                <div>
+                    <p>Tax:</p><span class="price">$0.82</span>
+                </div>
+                <div>
+                    <p>Total: </p><span class="price">$10.47</span>
+                </div>
             <button type="submit">Place order</button>
         </section>
     </main>
