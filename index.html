@@ -17,7 +17,46 @@
     </header>
 
     <main>
-        <sec
+        <section class="grid-container-2">
+            <div id="items" class="grid-item-1">
+                <h2>ITEMS</h2>
+                <p><span class="amount">1x</span><span class="item">Cappucino</span><span class="price">$6.00</span></p>
+                <p class="ingredient">Light Foam</p>
+                <p><span class="amount">1x</span><span class="item">Cappucino</span><span class="price">
+                        $7.90</span></p>
+                <p class="ingredient">Almond Milk</p>
+                <p class="ingredient">Double Espresso Shot</p>
+                <p><span class="amount">1x</span>
+                    <span class="item">Croissant</span><span class="price">
+                        $5.37</span></p>
+                <p class="ingredient">Butter</p>
+            </div>
+            <div id="name" class="grid-item-2">
+                <h2>NAME</h2>
+                <form>
+                    <label for="name">Name for order</label>
+                    <input type="text" id="name" name="name">
+                </form>
+            </div>
+            <div id="payment" class="grid-item-3">
+                <h2>PAYMENT</h2>
+                <form>
+                    <label for="card-number">Card number</label>
+                    <input type="text" id="card-number" name="card-number">
+                    <label for="ccv-number">CCV number</label>
+                    <input type="number" id="ccv-number" name="ccv-number">
+                </form>
+            </div>  
+        </section>
+
+        <section>
+            <div id="Total">
+                <p>Subtotal: <span class="price">$9.65</span></p>
+                <p>Tax: <span class="price">$0.82</span></p>
+                <p>Total: <span class="price">$10.47</span></p>
+            </div>
+            <button type="submit">Place order</button>
+        </section>
     </main>
 </body>
 
