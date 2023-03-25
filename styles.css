@@ -155,4 +155,20 @@ input[id="ccv-number"] {
     :root {
         font-size:small
     }
+
+    main {
+    padding: 10px 5px 2rem 5px;
+    background-color:#EFEFEF;       
+}
+    #items {
+    margin-left: 0;
+}
+    
+    #name, #payment {
+        margin: 0;
+    }
+
+    input, #ccv-number {
+        width: 25vw;
+    }
 }
